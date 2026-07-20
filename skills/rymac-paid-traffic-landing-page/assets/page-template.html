@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Paid-traffic landing page: single screen, one decision. No nav, no footer links, no external requests. -->
+<title>{{PAGE_TITLE}}</title>
+<meta name="robots" content="noindex">
+<style>
+  /* ============ TOKENS — set per brand/niche ============ */
+  :root{
+    --bg: #0e1116;            /* page background */
+    --surface: #171c24;       /* card/form surface if used */
+    --text: #f5f7fa;          /* primary text */
+    --muted: #a8b3c2;         /* secondary text */
+    --accent: {{ACCENT_COLOR}};   /* CTA color — must be the single highest-contrast element on the page */
+    --accent-text: #ffffff;
+    --radius: 12px;
+    --max-w: 680px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+    display:flex;flex-direction:column;
+  }
+  /* The entire page is one viewport. 100dvh (not vh) so mobile URL bars don't push the CTA below the fold. */
+  main{
+    min-height:100dvh;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    text-align:center;
+    padding:24px 20px;
+    gap:20px;
+  }
+  .wrap{max-width:var(--max-w);width:100%;display:flex;flex-direction:column;align-items:center;gap:20px}
+
+  /* Eyebrow — optional message-match echo of the ad ("For {{NICHE}}") */
+  .eyebrow{
+    font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;
+    color:var(--accent);
+  }
+
+  /* Headline — fluid type; verify line-parity desktop vs ~390px mobile */
+  h1{
+    font-size:clamp(1.75rem, 4.5vw + .8rem, 3.25rem);
+    line-height:1.12;
+    font-weight:800;
+    letter-spacing:-.015em;
+    text-wrap:balance;
+  }
+  h1 .accent{color:var(--accent)}
+
+  /* Supporting headline */
+  .sub{
+    font-size:clamp(1rem, 1.2vw + .8rem, 1.25rem);
+    line-height:1.5;
+    color:var(--muted);
+    max-width:56ch;
+    text-wrap:balance;
+  }
+
+  /* Bullets — 3 max, checkmarks, one line each on mobile */
+  ul.bullets{list-style:none;display:flex;flex-direction:column;gap:10px;text-align:left}
+  ul.bullets li{
+    font-size:clamp(.95rem, 1vw + .75rem, 1.1rem);
+    display:flex;gap:10px;align-items:flex-start;line-height:1.4;
+  }
+  ul.bullets li::before{content:"✓";color:var(--accent);font-weight:800;flex:0 0 auto}
+
+  /* CTA — never grey, largest tap target on the page, min 48px tall */
+  .cta{
+    display:inline-block;
+    background:var(--accent);color:var(--accent-text);
+    font-size:clamp(1.05rem, 1vw + .9rem, 1.2rem);font-weight:700;
+    padding:16px 36px;min-height:48px;
+    border:none;border-radius:var(--radius);cursor:pointer;
+    text-decoration:none;
+    box-shadow:0 8px 24px color-mix(in srgb, var(--accent) 35%, transparent);
+    transition:transform .12s ease, box-shadow .12s ease;
+    white-space:nowrap;
+  }
+  .cta:hover{transform:translateY(-1px)}
+  .cta:active{transform:translateY(0)}
+
+  /* Optional minimal form variant — cap at 3 fields, fewer is better */
+  form.capture{display:flex;flex-direction:column;gap:10px;width:100%;max-width:420px}
+  form.capture input{
+    padding:14px 16px;font-size:1rem;border-radius:var(--radius);
+    border:1px solid #2a3341;background:var(--surface);color:var(--text);
+  }
+  form.capture input::placeholder{color:#6b7788}
+  form.capture input:focus{outline:2px solid var(--accent);border-color:transparent}
+
+  /* Risk reversal — directly under the CTA, small but readable */
+  .risk{
+    font-size:.9rem;color:var(--muted);
+    display:flex;align-items:center;gap:6px;justify-content:center;flex-wrap:wrap;
+  }
+  .risk .lock{opacity:.8}
+
+  /* Trust strip — one line: stars + count, or a single-sentence micro-testimonial */
+  .trust{
+    font-size:.9rem;color:var(--muted);
+    display:flex;align-items:center;gap:8px;justify-content:center;flex-wrap:wrap;
+  }
+  .stars{color:#f6b73c;letter-spacing:2px;font-size:.95rem}
+
+  /* Legal footer — required for ad compliance; plain text, near-invisible, links only to privacy/terms */
+  footer{
+    padding:12px;text-align:center;
+    font-size:.72rem;color:#5b6675;
+  }
+  footer a{color:#5b6675}
+
+  @media (max-width:420px){
+    main{gap:16px;padding:20px 16px}
+    .wrap{gap:16px}
+    .cta{width:100%;white-space:normal}   /* full-width CTA on small screens */
+  }
+</style>
+</head>
+<body>
+<main>
+  <div class="wrap">
+    <p class="eyebrow">{{EYEBROW}}</p>
+
+    <h1>{{HEADLINE}}</h1>
+
+    <p class="sub">{{SUBHEADLINE}}</p>
+
+    <ul class="bullets">
+      <li>{{BULLET_1}}</li>
+      <li>{{BULLET_2}}</li>
+      <li>{{BULLET_3}}</li>
+    </ul>
+
+    <!-- VARIANT A: click-through CTA (booking link, checkout, next step) -->
+    <a class="cta" href="{{CTA_URL}}">{{CTA_TEXT}}</a>
+
+    <!-- VARIANT B: lead capture — swap in for Variant A; keep to the fewest fields the offer can survive on (3 max).
+         Inputs stay ≥16px font (1rem) so iOS doesn't zoom; type/inputmode give the right mobile keyboard.
+    <form class="capture" method="POST" action="{{FORM_ACTION}}">
+      <input type="text" name="name" placeholder="First name" aria-label="First name" autocomplete="given-name" required>
+      <input type="tel" name="phone" inputmode="tel" placeholder="Phone" aria-label="Phone" autocomplete="tel" required>
+      <button class="cta" type="submit">{{CTA_TEXT}}</button>
+    </form>
+    -->
+
+    <p class="risk"><span class="lock">🔒</span> {{RISK_REVERSAL}}</p>
+
+    <p class="trust"><span class="stars">★★★★★</span> {{TRUST_LINE}}</p>
+  </div>
+</main>
+
+<footer>
+  © {{YEAR}} {{BRAND}} · <a href="{{PRIVACY_URL}}">Privacy</a> · <a href="{{TERMS_URL}}">Terms</a>
+  <!-- Facebook ads REQUIRE a linked privacy policy on lead pages. Keep these two links — they don't count against attention ratio when styled as ghost text. -->
+</footer>
+</body>
+</html>
