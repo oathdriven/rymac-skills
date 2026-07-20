@@ -38,14 +38,14 @@ Inside that `skills/` folder, each skill is its own subfolder containing a
 
 **macOS / Linux:**
 ```bash
-git clone https://github.com/<your-username>/rymac-skills.git
+git clone https://github.com/oathdriven/rymac-skills.git
 mkdir -p ~/.claude/skills
 cp -r rymac-skills/skills/* ~/.claude/skills/
 ```
 
 **Windows (PowerShell):**
 ```powershell
-git clone https://github.com/<your-username>/rymac-skills.git
+git clone https://github.com/oathdriven/rymac-skills.git
 New-Item -ItemType Directory -Force "$env:USERPROFILE\.claude\skills" | Out-Null
 Copy-Item rymac-skills\skills\* "$env:USERPROFILE\.claude\skills\" -Recurse
 ```

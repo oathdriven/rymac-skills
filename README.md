@@ -72,13 +72,13 @@ own README with triggers and an example.
 Clone the repo and copy every skill into your global skills directory:
 
 ```bash
-git clone https://github.com/<your-username>/rymac-skills.git
+git clone https://github.com/oathdriven/rymac-skills.git
 cp -r rymac-skills/skills/* ~/.claude/skills/
 ```
 
 **Windows (PowerShell):**
 ```powershell
-git clone https://github.com/<your-username>/rymac-skills.git
+git clone https://github.com/oathdriven/rymac-skills.git
 Copy-Item rymac-skills\skills\* "$env:USERPROFILE\.claude\skills\" -Recurse
 ```
 
