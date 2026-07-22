@@ -54,6 +54,15 @@ own README with triggers and an example.
 |---|---|
 | [rymac-code-audit](./skills/rymac-code-audit) | Multi-lens audit of a web build — bugs, performance / Core Web Vitals, technical SEO / crawlability, and mobile responsiveness — as a severity-ranked report with `file:line` locations and concrete fixes. |
 
+### 🔍 Research & the conversion machine *(new — the skills from the live-build videos)*
+| Skill | What it does |
+|---|---|
+| [rymac-niche-research](./skills/rymac-niche-research) | Validates a niche BEFORE you build: 4 parallel research agents (verbatim pain quotes, psychology, competitor matrix, demand proof + lead-pool count) → a committed **BUILD / PIVOT / SKIP** verdict with offer angles in the niche's own words. Feeds every copy skill above. |
+| [rymac-profit-calculator](./skills/rymac-profit-calculator) | The "run YOUR numbers" calculator that is a sales page's pain engine — the prospect's own inputs, honest cited constants, bad-news-then-good-news output, one CTA. Nobody argues with their own math. |
+| [rymac-exit-pop](./skills/rymac-exit-pop) | Exit-intent popup done right: desktop mouse-leave + mobile fast-scroll-up triggers with proven constants, offering a free asset the page never promised. |
+| [rymac-call-funnel](./skills/rymac-call-funnel) | The plumbing that turns traffic into scheduled calls: one AI persona across chat/voice, emergency keywords that ping a live human, and every channel booking against one calendar truth. |
+| [rymac-relationship-sequence](./skills/rymac-relationship-sequence) | The 10-email sequence that trains new leads to open and click — E1 delivers the promise instantly, one idea + one link per email, no pitch before E9, proven cadence included. |
+
 ---
 
 ## Install
@@ -82,7 +91,7 @@ git clone https://github.com/oathdriven/rymac-skills.git
 Copy-Item rymac-skills\skills\* "$env:USERPROFILE\.claude\skills\" -Recurse
 ```
 
-Restart Claude Code and check your skills list — all nine should be there.
+Restart Claude Code and check your skills list — all fourteen should be there.
 
 > **Global vs. project scope:** global (`~/.claude/skills/`) makes a skill
 > available in every project on your machine. Project scope

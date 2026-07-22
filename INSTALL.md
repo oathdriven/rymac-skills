@@ -50,7 +50,7 @@ New-Item -ItemType Directory -Force "$env:USERPROFILE\.claude\skills" | Out-Null
 Copy-Item rymac-skills\skills\* "$env:USERPROFILE\.claude\skills\" -Recurse
 ```
 
-Restart Claude Code. All nine skills should be listed.
+Restart Claude Code. All fourteen skills should be listed.
 
 ## Updating
 
