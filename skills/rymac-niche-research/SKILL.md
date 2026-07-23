@@ -1,6 +1,6 @@
 ---
 name: rymac-niche-research
-description: Runs RyMac's offer-validation research method. Fans out parallel subagents to map a niche's pain points in their own words, the psychology of why the pain persists, a competitor matrix, demand proof with a lead-pool count, the niche's unit economics (revenue bands, net margin range, where the margin comes from, the P&L split, average ticket), and a response-behavior audit scoring the niche against your mechanism, then delivers a build/pivot/skip verdict with the underserved wedge, the USP, an affordability call on what the niche can actually pay, the profit left on the table, and ROI hooks written in their own numbers. Use when the user asks to "research a niche", "validate an offer", "find the pain points", "run niche research", "should I build this", "who else sells this", "what are the margins in X", "can they afford my offer", "what should I price this at", or has an idea or observation about a market. Make sure to use this skill whenever the user is deciding what to build, sell, price, or make content about next.
+description: Runs RyMac's offer-validation research method. Fans out parallel subagents to map a niche's pain points in their own words, the psychology of why the pain persists, a competitor matrix, demand proof with a lead-pool count, the niche's unit economics (revenue bands, net margin range, where the margin comes from, the P&L split, average ticket), and a response-behavior audit scoring the niche against your mechanism, then delivers a build/pivot/skip verdict with the underserved wedge, the USP, an affordability call on what the niche can actually pay, a delivery-economics check that YOUR own margin clears a 65% floor (with the lowest price you could charge and the owned-vs-rented cost of your stack), the profit left on the table, and ROI hooks written in their own numbers. Use when the user asks to "research a niche", "validate an offer", "find the pain points", "run niche research", "should I build this", "who else sells this", "what are the margins in X", "can they afford my offer", "what should I price this at", or has an idea or observation about a market. Make sure to use this skill whenever the user is deciding what to build, sell, price, or make content about next.
 argument-hint: [niche or idea, optional offer hypothesis, optional price point]
 ---
 
@@ -208,7 +208,53 @@ Deliver in this order:
    ROI justifies the bigger, more expensive solution, so pitch that first.
    Name the price point the research supports, not the one hypothesized.
 
-5. **Break-even in their units.** Never state ROI as a percentage. State it
+5. **The margin floor (your delivery economics).** Section 4 asked whether
+   they can pay. This asks whether YOU can profit. Both must pass or the
+   offer is not real, and most people only ever run the first one.
+
+   **The rule worth stealing: never build a thing that cannot project a 65%
+   net margin.** Read `references/delivery-costs.md`, which holds the cost
+   card, the carve-outs, and the scenario method. If the user has not filled
+   the cost card in yet, ask for the missing costs once and save them there.
+   Deliver:
+
+   a. **The stack you would ship them,** itemized from the offer hypothesis
+      (voice scheduler, email follow-up, site chat scheduler, CRM seat).
+   b. **Expected usage for THIS niche,** pulled from agent 5 (jobs per
+      month, close rate) and agent 6 (inbound volume, missed-call share,
+      after-hours share). Never guess it; usage is the variable that
+      actually moves margin, so state where the number came from.
+   c. **Three margin scenarios:** low-end (heavy usage, worst-case rates,
+      no credits), mid (expected usage, measured rates), high-end (light
+      usage, best rates).
+   d. **THE FLOOR.** The lowest monthly price that still clears the margin
+      rule at expected usage. One number, stated plainly. Worth knowing even
+      if you never intend to sell there.
+   e. **Any deliberate exception,** separately: a segment you have chosen to
+      serve thinner. Label it a choice, never the business model.
+   f. **The carve-outs.** Costs that belong to the client and never enter
+      your margin math. The pattern: have them register their own A2P brand
+      and buy their own phone number, so they own the number and you do not
+      own the carrier-compliance liability. Same for their domain, their ad
+      spend, their merchant account.
+   g. **Owned versus rented, side by side.** The same delivered stack on
+      rented rails (the common option runs ~$97/mo plus ~$0.25/min) next to
+      your own measured cost. **State both numbers and stop.** Do not write
+      the conclusion underneath. The arithmetic makes the argument, and a
+      reader who arrives there themselves believes it. Same law as the
+      calculator: never tell them anything you can get them to say
+      themselves.
+
+   If expected usage cannot clear the floor at a price section 4 says the
+   niche can afford, the offer is broken. Say so loudly and name the fix:
+   raise the price, cut the stack, cap the usage, or skip the niche. Section
+   4 and section 5 disagreeing is a finding, not a rounding error.
+
+   Mark any unmeasured component UNMEASURED and widen the low-end scenario
+   rather than inventing a cost. A margin projection built on a guessed COGS
+   is worse than no projection.
+
+6. **Break-even in their units.** Never state ROI as a percentage. State it
    as the number of jobs.
    - Break-even jobs = offer price / gross margin per ticket.
    - Use GROSS (contribution) margin here, not net, and say why in the
@@ -219,7 +265,7 @@ Deliver in this order:
    - Also give it as a fraction of a month: how many days of normal volume
      pay for the offer.
 
-6. **The mechanism gap analysis.** The section that turns research into an
+7. **The mechanism gap analysis.** The section that turns research into an
    offer. The equation being solved:
 
    > pain + industry average + which standard it breaks + their numbers
@@ -264,26 +310,26 @@ Deliver in this order:
    that standard or ignore it; one broken industry-wide AND unaddressed by
    every competitor is the strongest possible position.
 
-7. **The underserved wedge.** Where competitors are not: the segment, the
+8. **The underserved wedge.** Where competitors are not: the segment, the
    angle, or the delivery model left open. It should be consistent with the
    worst-broken standard from section 6; if it is not, explain why.
-8. **The USP.** One sentence in plain words: why this offer wins against the
+9. **The USP.** One sentence in plain words: why this offer wins against the
    matrix. Tie it to a real gap, not a vibe.
-9. **2-3 offer angles** written in the niche's verbatim pain language,
+10. **2-3 offer angles** written in the niche's verbatim pain language,
    each as: promise + mechanism + price anchor from the competitor matrix,
    with the affordability call from section 4 respected. Name the specific
    standard each angle fixes.
-10. **3 ROI hooks** built with the formula below, using the real numbers
+11. **3 ROI hooks** built with the formula below, using the real numbers
     from agent 5 and the gaps from section 6. These are the lines said on a
     sales call and the ones that feed rymac-headline-copywriting.
-11. **The pain language bank.** The best verbatim quotes, grouped by theme,
+12. **The pain language bank.** The best verbatim quotes, grouped by theme,
     ready to feed rymac-headline-copywriting and rymac-sales-page-builder.
     Include a **numbers vocabulary** sub-bank: the exact words this niche
     uses for its own economics (ticket, callout, truck roll, effective labor
     rate, billable hour, job cost, parts matrix, booked jobs, close rate,
     shop supplies, comeback). Using their word for a number is half of
     sounding like an insider; using the wrong one ends the call.
-12. **What would kill this.** The strongest evidence AGAINST the verdict,
+13. **What would kill this.** The strongest evidence AGAINST the verdict,
     stated honestly. One paragraph. Include the margin risk if the
     affordability call was STRETCH or worse, and say plainly if the
     mechanism gaps had to be modeled rather than sourced.
@@ -383,6 +429,15 @@ Rules for the hook:
    - break-even in jobs:
    - profit gained per month by standard:
    - every figure's source or MODELED tag:
+
+   ### Delivery economics  → pricing, and any page that names a price
+   - the stack shipped:
+   - expected usage for this niche:
+   - my margin low / mid / high:
+   - THE FLOOR (lowest price clearing the margin rule):
+   - any deliberate exception:
+   - carve-outs (SMS/A2P, other pass-throughs):
+   - owned vs rented cost, both numbers:
    ```
 
 2. **The shareable page.** If your environment can publish a page
@@ -395,20 +450,24 @@ Rules for the hook:
    2. **Affordability banner.** AFFORDABLE / STRETCH / UNAFFORDABLE, with
       the lead-cheap-or-lead-premium call and the supported price point.
    3. **The money math table** and the margin anatomy.
-   4. **The mechanism scoreboard.** The gap table as cards, one per
+   4. **The margin floor panel.** Your side of the deal: the three margin
+      scenarios, THE FLOOR as one big number, any deliberate exception, the
+      carve-outs, and the owned-versus-rented table. Present the two cost
+      columns plainly with no conclusion written under them.
+   5. **The mechanism scoreboard.** The gap table as cards, one per
       standard, each showing: the standard, the niche average, the size of
       the gap, one verbatim quote proving it, and the profit-gained figure.
       Visually flag the worst-broken one as the wedge.
-   5. **Break-even in jobs**, as a single large number.
-   6. The wedge and the USP.
-   7. The offer angles.
-   8. **The 3 ROI hooks in copy-ready blocks**, each formatted to lift
+   6. **Break-even in jobs**, as a single large number.
+   7. The wedge and the USP.
+   8. The offer angles.
+   9. **The 3 ROI hooks in copy-ready blocks**, each formatted to lift
       straight into a call or an email, with the fill-in-the-blank slot for
       the prospect's own admission visibly marked.
-   9. The pain language bank grouped by theme with sources, plus the
+   10. The pain language bank grouped by theme with sources, plus the
       numbers vocabulary.
-   10. The lead pool.
-   11. What would kill this.
+   11. The lead pool.
+   12. What would kill this.
 
    Design rules: scannable over complete, numbers big, prose small. Every
    figure carries its source or a MODELED tag inline.
@@ -464,6 +523,16 @@ to re-explain the niche, the pain, the margins, or the price.
     because the mechanism being sold has nothing to fix there.
 13. Publish the shareable page every run if the environment allows it. The
     chat reply is a summary and a link, never the report itself.
-14. Quote the mechanism's stats from its reference file exactly. A prospect
+14. **A 65% net margin is a floor, not a target.** Never green-light a build
+    that cannot project it at expected usage. If it cannot, say so in the
+    verdict rather than burying it in section 5. Most people research whether
+    the customer can pay and never check whether they can deliver.
+15. Never invent a delivery cost. Measured or UNMEASURED, and an UNMEASURED
+    component widens the low-end scenario. A margin projection resting on a
+    guessed COGS is worse than admitting there is no projection yet.
+16. Show owned-versus-rented cost side by side and write no conclusion under
+    it. People believe what they work out for themselves; naming the
+    conclusion turns a proof into a pitch and loses the reader.
+17. Quote the mechanism's stats from its reference file exactly. A prospect
     can look up the same studies, so a misquoted figure or a decay curve
     invented mid-research burns the credibility the whole mechanism rests on.
