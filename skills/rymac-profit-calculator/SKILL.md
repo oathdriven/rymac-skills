@@ -13,6 +13,53 @@ they will believe everything they say. Two live reference patterns are
 described inline below (a speed-to-lead loss calculator and a
 SaaS-rent/growth-tax calculator, both running on RyMac's own pages).
 
+## Start here: is there a research file?
+
+If a `niche-research-<slug>.md` exists for this niche, **read its HANDOFF
+CONTRACT block first and build from it.** It already carries the calculator
+type, the leak variable, the inputs with painful defaults, the constants
+with sources, the formula, the bad-news and good-news lines in the niche's
+own words, the ask, and the CTA. Do not re-interview the user for anything
+that block already answers, and do not re-research the niche. If a contract
+field says UNKNOWN, that field is the only thing worth asking about.
+
+No research file? Build from scratch with the method below, and say up front
+that running `rymac-niche-research` first would have supplied the constants.
+
+## What this actually is
+
+**The calculator is the P.A.S. sales letter's logical twin.** Same three
+beats, different fuel:
+
+| | `rymac-direct-sales-copy` (the letter) | this skill (the calculator) |
+|---|---|---|
+| **Problem** | questions that make them self-identify: "sound like you?" | input fields that make them ADMIT their own numbers |
+| **Agitate** | emotional, cinematic, the villain, the Groundhog Day feeling | arithmetic. Their number, annualized, sitting there in red |
+| **Solution** | the mechanism revealed as the way out | the same number shown recovered, one CTA under it |
+
+Emotion gets people to buy; logic lets them justify what they already
+decided. The letter does the first job, this does the second, and a strong
+page often runs both. So the calculator's persuasion comes entirely from
+arithmetic they cannot argue with, because they typed the inputs. The moment
+it editorializes, it stops being logic and becomes just another claim, and
+it loses the only advantage it had over the letter.
+
+**The mechanism, once:** get them to admit their numbers, let the math
+agitate the pain, make the solution the obvious conclusion of their own
+arithmetic.
+
+## Pick the type before you build
+
+| Type | Monetizes | The question it answers |
+|---|---|---|
+| **LOSS-DRIVEN** | revenue they never captured | "what did last month cost you?" |
+| **COST-DRIVEN** | money they already spend | "what is renting this costing you?" |
+| **CAPACITY-DRIVEN** | headroom they cannot reach | "what would one more crew be worth?" |
+
+The type sets the register. Loss-driven says *you are bleeding and did not
+know it*. Cost-driven says *you are being farmed and did not know it*. Never
+mix two leaks in one widget; it halves the punch of both.
+
 ## The design law
 
 **The output is THEIR math, not our claim.** The calculator takes the
@@ -26,12 +73,17 @@ next to their real numbers poisons the whole page.
    speed decay, rent plus compounding price hikes, missed after-hours
    calls, an unworked database, etc. If you ran rymac-niche-research, the
    handoff file (`niche-research-<slug>.md`) names it.
-2. **Pick honest constants and cite them.** The speed-to-lead reference
-   uses response-speed decay factors (under 5 minutes = 0.04 loss factor,
-   scaling up to 0.6 for same-day answering) anchored to the MIT /
-   InsideSales 15,000-lead study, shown right above the calculator. The
-   rent reference uses a 9%/yr SaaS price-hike rate and a 10-year horizon,
-   all restated in an on-page disclaimer.
+2. **Pick honest constants and cite them.** For any LOSS-DRIVEN calculator
+   built on speed to lead or follow-up, the constants ship with this pack in
+   `rymac-niche-research/references/the-3-laws.md`: the 0.60 winnable
+   factor, the loss-rate table (under 5 min = 0.04, 30 min = 0.28, 1 hr =
+   0.42, same/next day = 0.60), and the MIT / Harvard stats that justify
+   them. Use those exact values so the calculator and the research report
+   quote the same number. That file also marks which figures are
+   attributable to the studies and which are one operator's calibration;
+   keep that distinction in the on-page disclaimer. The rent reference uses
+   a 9%/yr SaaS price-hike rate and a 10-year horizon, all restated in an
+   on-page disclaimer.
 3. **Two to four inputs maximum,** clamped to sane ranges, with defaults
    chosen so the DEFAULT result is already painful (reference defaults:
    $2,500 job value, 30 leads/mo, same-day answering).
@@ -68,3 +120,17 @@ next to their real numbers poisons the whole page.
 - [ ] One CTA, pixel event, funnel-consistent
 - [ ] Disclaimer restating every assumption
 - [ ] Honesty check: every constant survivable in public
+
+## Hand off the next move
+
+Close by printing the next commands, so the build keeps moving without a
+re-explanation:
+
+```
+  "use rymac-sales-page-builder, the calculator is the PAS engine"
+  "use rymac-direct-sales-copy for the emotional twin of this calculator"
+  "use rymac-headline-copywriting for the hero above it"
+```
+
+If the calculator was built from a `niche-research-<slug>.md`, name that
+file in the handoff so the next skill reads the same contract.

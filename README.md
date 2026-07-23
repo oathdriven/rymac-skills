@@ -57,8 +57,8 @@ own README with triggers and an example.
 ### 🔍 Research & the conversion machine *(new — the skills from the live-build videos)*
 | Skill | What it does |
 |---|---|
-| [rymac-niche-research](./skills/rymac-niche-research) | Validates a niche BEFORE you build: 4 parallel research agents (verbatim pain quotes, psychology, competitor matrix, demand proof + lead-pool count) → a committed **BUILD / PIVOT / SKIP** verdict with offer angles in the niche's own words. Feeds every copy skill above. |
-| [rymac-profit-calculator](./skills/rymac-profit-calculator) | The "run YOUR numbers" calculator that is a sales page's pain engine — the prospect's own inputs, honest cited constants, bad-news-then-good-news output, one CTA. Nobody argues with their own math. |
+| [rymac-niche-research](./skills/rymac-niche-research) | Validates a niche BEFORE you build: **6 parallel research agents** (verbatim pain quotes, psychology, competitor matrix, demand proof + lead-pool count, **unit economics + net margins**, **response-behavior audit**) → a **BUILD / PIVOT / SKIP** verdict, an **affordability call** on whether the niche can actually pay your price, the profit left on the table, and ROI hooks in their own numbers. Ships with **[the 3 Laws](./skills/rymac-niche-research/references/the-3-laws.md)** as a default mechanism (swap in your own). Writes a **handoff contract** every skill below reads, so you never re-explain the niche. |
+| [rymac-profit-calculator](./skills/rymac-profit-calculator) | The "run YOUR numbers" calculator that is a sales page's pain engine — the prospect's own inputs, honest cited constants, bad-news-then-good-news output, one CTA. **The logical twin of the P.A.S. sales letter:** emotion gets people to buy, logic lets them justify it. Nobody argues with their own math. |
 | [rymac-exit-pop](./skills/rymac-exit-pop) | Exit-intent popup done right: desktop mouse-leave + mobile fast-scroll-up triggers with proven constants, offering a free asset the page never promised. |
 | [rymac-call-funnel](./skills/rymac-call-funnel) | The plumbing that turns traffic into scheduled calls: one AI persona across chat/voice, emergency keywords that ping a live human, and every channel booking against one calendar truth. |
 | [rymac-relationship-sequence](./skills/rymac-relationship-sequence) | The 10-email sequence that trains new leads to open and click — E1 delivers the promise instantly, one idea + one link per email, no pitch before E9, proven cadence included. |
@@ -108,6 +108,31 @@ Once installed, you don't "call" a skill — you just ask. Say _"write me a sale
 letter for my roofing business"_ and `rymac-direct-sales-copy` fires on its own.
 Each skill's README lists the phrases that trigger it. You can also force one
 with its slash command, e.g. `/rymac-headline-copywriting`.
+
+### Run the whole machine (three commands)
+
+The skills are built to hand off to each other. `rymac-niche-research` writes a
+`niche-research-<slug>.md` ending in a **HANDOFF CONTRACT** — the spine, the
+headline inputs, the calculator spec, the PAS inputs, and every number with its
+source. Everything downstream reads that block instead of interviewing you again.
+
+```
+"research <your niche>, I want to sell a $X/mo offer"
+"use rymac-profit-calculator with niche-research-<slug>.md"
+"use rymac-sales-page-builder for <niche>, research is in niche-research-<slug>.md"
+```
+
+Research → offer → page, without re-explaining the niche, the pain, the margins,
+or the price. Each step also prints the next command when it finishes, so you can
+follow the chain without memorizing it.
+
+**One thing worth knowing:** the research skill scores your niche against a
+*mechanism* — the standards you think operators should hit, whose failure to hit
+them becomes your offer. It ships with [the 3 Laws](./skills/rymac-niche-research/references/the-3-laws.md)
+(speed to lead, follow-up persistence, right message) as a sourced default that
+works for any business taking inbound leads. If you have your own framework, the
+skill asks for it once and saves it. That gap, priced against the niche's real
+margins, is where an offer actually comes from.
 
 ---
 
