@@ -1,6 +1,6 @@
 ---
 name: rymac-sales-page-builder
-description: Build high-converting sales pages and landing pages with the RyMac funnel pattern - nail the headline first, then a pain-agitate-solution "engine" (a sales letter, a calculator, or a free interactive demo), then teach the mechanism, value stack, proof, pricing, FAQ, and a final CTA. Orchestrates the rymac-headline-copywriting, niche-research, rymac-paid-traffic-landing-page, ui-ux-pro-max, and rymac-vsl-copywriting skills in the right order. Use whenever the user wants to "build a landing page", "write a sales page", "make a sales letter", "build a funnel", a "high-converting page", a "hero section", or a "VSL page". Make sure to use this skill whenever the user is building, rewriting, or critiquing any marketing, sales, or landing page.
+description: Build high-converting sales pages and landing pages with the RyMac funnel pattern - nail the headline first, then a pain-agitate-solution "engine" (a sales letter, a calculator, or a free interactive demo), then teach the mechanism, value stack, proof, pricing, FAQ, and a final CTA. Orchestrates the full machine checklist-style with a published build board: rymac-niche-research, rymac-headline-copywriting, rymac-direct-sales-copy, rymac-profit-calculator, rymac-exit-pop, rymac-call-funnel, rymac-relationship-sequence, rymac-paid-traffic-landing-page, ui-ux-pro-max, and rymac-vsl-copywriting in the right order. Use whenever the user wants to "build a landing page", "write a sales page", "make a sales letter", "build a funnel", a "high-converting page", a "hero section", or a "VSL page". Make sure to use this skill whenever the user is building, rewriting, or critiquing any marketing, sales, or landing page.
 argument-hint: [what page / which brand / the offer]
 ---
 
@@ -39,7 +39,7 @@ Every page is the same skeleton:
                  contact, parent-company copyright. All outbound links open a NEW tab.
 ```
 
-Two cross-cutting layers ride alongside the skeleton: an **exit pop** (its own mini-offer, something NOT sold on the page) and a **chatbot / scheduling agent** that injects on scroll into section 2 (NOT the fold - keep the hero decision-free), stays out of the way, and doubles as live proof the product works. Both in `section-playbook.md`.
+Three cross-cutting layers ride alongside the skeleton: an **exit pop** (its own mini-offer, something NOT sold on the page; build it with the `rymac-exit-pop` skill), a **chatbot / scheduling agent** that injects on scroll into section 2 (NOT the fold - keep the hero decision-free), stays out of the way, and doubles as live proof the product works (wire it with the `rymac-call-funnel` skill when the page's goal is booked calls), and the **relationship-building email sequence** every captured lead enters (exit pop and booking both feed it; build it with the `rymac-relationship-sequence` skill). Page-side anatomy in `section-playbook.md`.
 
 **Legal is load-bearing, not optional.** The moment the page makes a cost claim ("run it free on billion-dollar infrastructure") or names a competitor ("cheaper than GoHighLevel"), it needs a **Disclaimer page** (plus Terms + Privacy) linked in the footer. The bold copy is only safe because the disclaimer is precise: free tiers are real but not a zero-cost guarantee, you're not affiliated with any company you name, no results are guaranteed. See `section-playbook.md` -> Legal pages.
 
@@ -67,12 +67,13 @@ Research the buyer first, then design the page around the ask. Never design befo
 
 Copy this checklist and tick it off. Note: you build the highest-leverage pieces first, not the pieces in page order.
 
-- [ ] 1. **The spine** (before a single word of copy). Write one page: **villain** (the ONE pain / enemy), **promise** (dream outcome), **mechanism** (how it works), **proof** (receipts), **offer**, **voice**. Everything on the page serves this. If the spine is wrong, the words do not matter. Skill: `niche-research` / `researcher` for the audience and their pain *in their own words* (mine proven hooks - cold emails that got replies, VSL hooks, real call language - before you invent anything).
+- [ ] 1. **The spine** (before a single word of copy). Write one page: **villain** (the ONE pain / enemy), **promise** (dream outcome), **mechanism** (how it works), **proof** (receipts), **offer**, **voice**. Everything on the page serves this. If the spine is wrong, the words do not matter. Skill: `rymac-niche-research` for the audience and their pain *in their own words* (if a `niche-research-<slug>.md` already exists, use it; mine proven hooks - cold emails that got replies, VSL hooks, real call language - before you invent anything).
 - [ ] 2. **The headline** (single highest-leverage element). Nail the hero H1 before building anything else. **The formula: `[Dream outcome] in [timeframe] without [the pain]`** - this drives the H1, the subhead, and the bullets. **Never make the reader admit a failure** ("Practice the call without the judgment" beats "the call you keep avoiding" - the first sells the escape, the second makes them confess). The villain is external, never the reader. Skill: `rymac-headline-copywriting` (20+ variants, the five tests, pick the top 3, assemble the hero). Decide the hero's job here (see below).
 - [ ] 3. **The hero**, built to its job. Skill: `rymac-paid-traffic-landing-page` for the fold rules.
 - [ ] 4. **The PAS engine** - the section right after the hero that makes them NEED it. Pick its form (letter / calculator / free demo) to fit the offer. This is the section people skip; it is the one that converts.
 - [ ] 5. **Everything below**, in the natural progression (mechanism -> value stack -> proof -> pricing -> FAQ -> final CTA).
 - [ ] 6. **Structure first, copy sweep last.** Build the whole skeleton with placeholder copy, get it seen and approved, THEN do one top-to-bottom copy pass. See "How to work" below.
+- [ ] 7. **The craft floor.** Run every line of the craft-floor checklist below and screenshot the result before you call the page done. A page with a perfect spine and system fonts still reads as cheap, and the reader prices the offer off the page.
 
 ## The hero's job (decide this in step 2)
 
@@ -83,19 +84,119 @@ Copy this checklist and tick it off. Note: you build the highest-leverage pieces
 
 When in doubt on cold traffic, earn the scroll. A cold reader will not buy from a fold; they buy after the PAS engine has made the pain real.
 
+## The craft floor (a page does not ship until every line passes)
+
+Structure and copy are not the whole job. A page can have a great headline, a
+great PAS letter and every correct element and still read as a free template.
+That is a **craft** failure, not a copy failure, and it kills trust before a
+word is read: a $10,000 offer on a $200 page is not believable.
+
+This floor is derived from the real delta between allodra.ai (reads expensive)
+and the first dispatchzap.com build (reads cheap) with near-identical structure.
+
+- [ ] **1. Never ship system fonts.** This is the single loudest cheap tell.
+      `Arial Narrow`, `Impact`, `Helvetica`, `Segoe Script`, `Georgia` as the
+      display face = template. Load **2 or 3 real webfonts** with distinct
+      roles: a display face for headlines, a body face, and a mono for
+      labels/data. Allodra runs Geist + Instrument Serif + JetBrains Mono.
+      Nothing else on this list matters if the type is wrong.
+- [ ] **2. The headline gets a treatment, not just a size.** Split it: the
+      setup in the base ink, the payload words in the brand gradient or accent.
+      "Your CRM isn't **Software.** It's a **Landlord.**" carries a spectrum
+      gradient on 2 words. One flat accent colour on the whole second line is
+      the budget version of the same idea.
+- [ ] **3. The background is never one flat fill.** 2 or 3 ambient radial
+      glows, off-axis, low opacity, in brand hues. A single hex across 100vh
+      reads as unfinished. This is 6 lines of CSS and it does more than any
+      other single change.
+- [ ] **4. The hero's proof must be visible in the first painted frame.**
+      NEVER gate the hero visual behind an entrance animation, and never use
+      `animation-fill-mode: backwards` on hero content. Animate INTO motion
+      from a visible resting state, not FROM `opacity:0`. If a screenshot, a
+      social preview, a Lighthouse run or a fast scroller can catch an empty
+      box, the animation is a bug. **Test it: screenshot the page headless at
+      0ms and look at what you get.**
+- [ ] **5. Bold whole sentences or nothing.** Partial bold inside body copy is
+      the most common self-inflicted readability wound: every bold run forces
+      the eye to re-enter the sentence, so a paragraph with 3 bolded fragments
+      reads slower than one with none. It works on a **single short line** (a
+      hero bullet, a one-line stat) and it fights you everywhere else. In any
+      multi-sentence block, bold the entire sentence that carries the point, or
+      leave the block clean and let a pull-quote or a chip do the emphasis.
+      Never bold a fragment mid-sentence in body copy.
+- [ ] **6. Nothing sits below full opacity at rest.** Dimmed text reads as
+      disabled or broken, not subtle. Use a dimmer *colour* token, never a
+      lowered opacity, for de-emphasis.
+- [ ] **7. Trust bars are logos, not grey text.** "AS SEEN ON ENTREPRENEURS ON
+      FIRE" set in small grey caps is weaker than the logo itself. If real
+      logos exist (press, integrations, stacks, clients), render them. A row
+      of real marks is the cheapest credibility on the page.
+- [ ] **8. Buttons have depth.** Gradient or layered fill, a soft glow in the
+      accent, a hover lift, and a visible focus ring. A flat filled rectangle
+      is a wireframe, not a CTA.
+- [ ] **9. Kill dead space.** If a hero column is empty, or a gap between
+      sections is larger than any gap inside them, the layout is wrong.
+      Vertical rhythm comes off one spacing scale, used everywhere.
+- [ ] **10. One ownable signature detail.** Every page needs a single device
+      that could only belong to this brand: Allodra's dictionary eyebrow
+      (`al·lo·di·al /əˈlōdēəl/ (adj.)` under a gradient rule), DispatchZap's
+      hazard-stripe rule. Without it the page is competent and forgettable.
+- [ ] **11. Look at it before you call it done.** Render the page headless and
+      actually view the screenshot at full width AND at 390px. Do not report a
+      page as finished on the basis that the code is correct. Half of these
+      failures are only visible, never detectable in source.
+
+**When copy is great and the page still feels cheap, it is always this list.**
+Run it before the copy sweep, not after, because these are structural.
+
 ## Companion skills (hand off, do not re-derive)
 
 | Step | Skill |
 |---|---|
-| Audience + pain research | `niche-research`, `researcher` |
+| Audience + pain research + offer validation | `rymac-niche-research` (produces the `niche-research-<slug>.md` handoff; downstream skills consume it instead of re-researching) |
 | Headline + hero copy | `rymac-headline-copywriting` |
 | The written P.A.S. letter engine (step 4, letter form) | `rymac-direct-sales-copy` |
+| The calculator engine (step 4, calculator form) | `rymac-profit-calculator` |
+| Exit pop (cross-cutting layer) | `rymac-exit-pop` |
+| Chat scheduler + voice agent + booking plumbing | `rymac-call-funnel` |
+| Lead nurture after capture | `rymac-relationship-sequence` |
 | Fold rules, conversion structure, anti-leak | `rymac-paid-traffic-landing-page` |
 | Visual design + build | `ui-ux-pro-max`, `frontend-design` |
 | VSL script (for the hero video) | `rymac-vsl-copywriting` |
 | VSL render | `remotion-best-practices` |
 
 If a companion skill is not installed (e.g. a Skool member using this standalone), the principles you need are inlined in `conversion-principles.md` - use those.
+
+## The build board (publish it, keep it current)
+
+At the START of every build, publish an Artifact (load artifact-design
+first) that is the living plan for the whole machine, and republish it to
+the same URL as things complete. Ryan runs off this board. It contains:
+
+1. **The full-machine checklist**, every element with its owner:
+
+| Element | Skill | Owner |
+|---|---|---|
+| Niche research + offer validation | rymac-niche-research | Claude |
+| Decide the ask + approve the spine | (decision) | Ryan |
+| Headline + hero | rymac-headline-copywriting | Claude drafts, Ryan picks |
+| PAS engine (letter or calculator) | rymac-direct-sales-copy / rymac-profit-calculator | Claude |
+| Sections below (mechanism -> final CTA) | this skill | Claude |
+| Exit pop + its unseen asset | rymac-exit-pop | Claude builds, Ryan approves the asset |
+| Call funnel (chat + voice + booking + escalation) | rymac-call-funnel | Claude wires, Ryan sets on-call contact + hours |
+| Relationship sequence E1-E10 | rymac-relationship-sequence | Claude drafts, Ryan voice-checks |
+| Domain + DNS + deploy | (build) | Ryan buys, Claude deploys |
+| Legal pages + footer | this skill | Claude |
+| Copy sweep + em-dash grep | this skill | Both, independently, then merge |
+
+2. **A "still left" section** at the top: the next 3 actions, who owns
+   each. Update it every time something finishes; the board should always
+   answer "what's still left?" at a glance.
+3. **Status per element**: not started / in progress / done, with links to
+   drafts or live URLs as they exist.
+
+The board is the orchestrator's contract: any element skipped must be
+skipped out loud on the board, never silently.
 
 ## How to work (the method that actually ships)
 
@@ -112,6 +213,7 @@ These are Ryan's; a Skool member should replace them with their brand's:
 - **Write at a 5th-to-8th grade reading level.** Short sentences, plain words. Check with the free Hemingway app (hemingwayapp.com) and cut until it passes. Clever loses to clear.
 - **Always show the promised thing.** Even a static image beats an empty slot: a screenshot of the dashboard, the result, the product. The reader should SEE what they are being promised, not just read about it. **Best form:** brand-native motion loops (short, silent, on-brand animations rendered over the real screenshots - e.g. a deal card dragging to Won, a bar chart counting up) instead of generic gifs; they read as "the actual product, alive." A montage of them makes a strong "you're looking at it" proof shot.
 - **No em dashes** in customer-facing copy. Ship gate: grep the built page, zero hits. (This one bites repeatedly - sweep EVERY section, including ones you wrote earlier.)
+- **Numbers are always numbers** (digits, never spelled out). Same tier as the em-dash rule; sweep for spelled-out figures too.
 - **No orphaned words** (a lone word wrapping to its own line reads lazy). Enforce with `text-wrap: pretty` + `white-space: nowrap` on short labels.
 - **Headline house style:** Title Case, with the gradient span carrying its trailing punctuation (the period rides the gradient too, so it never snaps back to white). The brand wordmark wears the full gradient everywhere, every piece of it (`.ai` included).
 - **One brand palette + font pair**, committed. Dark-only or light-only, not both by accident.
