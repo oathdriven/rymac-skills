@@ -9,9 +9,9 @@ argument-hint: [what page / which brand / the offer]
 Build a sales or landing page that converts, using one repeatable skeleton. The skeleton is always the same; the clothes change per offer. This skill is the map plus the order of operations, and it hands off to the right companion skill at each step so you are never guessing.
 
 Load these on demand (one level deep):
-- `C:/Users/American Legion 31/.claude/skills/rymac-sales-page-builder/references/section-playbook.md` - the job, copy anatomy, and a template for every section (hero through final CTA).
-- `C:/Users/American Legion 31/.claude/skills/rymac-sales-page-builder/references/conversion-principles.md` - the page-level rules that make copy convert (value equation, one villain, the refrain, micro-yes, risk reversal, honesty, CTA patterns).
-- `C:/Users/American Legion 31/.claude/skills/rymac-sales-page-builder/references/case-studies.md` - three live pages (Allodra, Sierra-6, closectl) mapped onto this exact skeleton. Read this to see "same bones, different clothes."
+- `${CLAUDE_SKILL_DIR}/references/section-playbook.md` - the job, copy anatomy, and a template for every section (hero through final CTA).
+- `${CLAUDE_SKILL_DIR}/references/conversion-principles.md` - the page-level rules that make copy convert (value equation, one villain, the refrain, micro-yes, risk reversal, honesty, CTA patterns).
+- `${CLAUDE_SKILL_DIR}/references/case-studies.md` - three live pages (Allodra, Sierra-6, closectl) mapped onto this exact skeleton. Read this to see "same bones, different clothes."
 
 ## The one insight
 
