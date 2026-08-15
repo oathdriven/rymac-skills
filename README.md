@@ -148,7 +148,7 @@ Built by **RyMac**. If these help you close deals or ship faster, I'd love to
 hear about it. Everything I do lives at **[theonlyrymac.com](https://theonlyrymac.com)** — start there.
 
 - ▶️ **YouTube** — [@RyMacHQ](https://www.youtube.com/channel/UCCvs0428gbdbXHjKSV6-v5Q)
-- 🎓 **Skool (CommitToClose)** — [skool.com/commit-to-close](https://skool.com/commit-to-close)
+- 🎓 **Skool (Build Market Close)** — [skool.com/buildmarketclose](https://www.skool.com/buildmarketclose/about)
 - 💼 **LinkedIn** — [in/theonlyrymac](https://www.linkedin.com/in/theonlyrymac/)
 - 𝕏 **X / Twitter** — [@theonlyrymac](https://x.com/theonlyrymac)
 - 🔗 **Everything else** — [theonlyrymac.com](https://theonlyrymac.com)

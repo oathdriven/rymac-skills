@@ -178,10 +178,13 @@ no, I'll just refund your money."). The surgical version: "Why do you think
 SHE would say no?" Whatever they answer is the TRUE objection. Handle it and
 close. "I'm a big boy, you can just tell me no."
 
-Origin story (teaching gold): named live on a call. "Let's call a spade a
-spade, you just lied to me because you didn't want to hurt my feelings. You
-know when I call you in 2 weeks you won't answer. Right?" "I was like oh
-shit, I'm tucking that spade away."
+Origin story (teaching gold): named live on a call. Ryan: "Let's call a spade
+a spade, you just lied to me because you didn't want to hurt my feelings. You
+know when I call you in 2 weeks you won't answer. Right?" The prospect:
+"Yeah, you're right, this just isn't for me man." That response is the whole
+point: the spade got to the truth in 1 sentence, saved Ryan the time, and
+saved the guy from dodging him like a bill collector for 2 weeks. "I was like
+oh shit, I'm tucking that spade away."
 
 The two-weeks spade: "Every time someone says follow up with me in 2 weeks,
 and I do, what would your guess be with how many people respond? Zero. No one
@@ -244,11 +247,35 @@ response-to-schedule rates." Guarantee only what you control.
 Planning rule: run it at 25% until you prove otherwise (people claim higher;
 "everyone counts the maybes"). The two levers, always side by side:
 - Lever A: raise the close rate (25% → 35% cuts calls by ~29%)
-- Lever B: raise the offer (2x deal value cuts calls by 50%)
+- Lever B: raise the offer (1.5x deal value cuts the calls you need by about
+  a third)
 - "One of those is a lot easier than the other."
 
-The price anchor (advanced lever): quote double. If they push back, offer the
-real price if they commit today, on this call. The doubled quote frames the
+The multiplier is 1.5x, never 2x (Ryan, 2026-08-07). 5k becomes 7.5k. It
+leaves room to fall back, and it works as a 2-way street with the advanced
+close, which runs the same ratio. 2x feels unreal in the framing and the
+downsell. The human reason: 1.5x is a raise someone not yet comfortable can
+actually say out loud, and 2x is not, especially on bigger numbers where
+doubling becomes a jump the seller cannot hold with a straight face.
+
+The ceiling is found by asking (Ryan, 2026-08-07, verbatim): "Me personally,
+I'll keep asking until I hit a wall. The 30K offer was a 10K offer when I got
+my hands on it and I asked for 15, close close close, went to 30, close close
+close, made it 25K conditional, 30K if they had to come back. But I am not
+most people. So 1.5 is comfortable for 99 percent." Stepwise raises between
+real closes, never 1 giant leap. 1.5x is the rule for the 99%; only closes
+buy the next raise.
+
+The lambo principle (Ryan, 2026-08-07, verbatim): "When you become
+unaffordable, they want it even more, and when they say they can't afford
+you, now you're leveraged to come to 'their level' and ask 'well, what can
+you afford?' Why do you think everyone wants a lambo? Because everyone can't
+afford it." Unaffordability manufactures desire; "I can't afford you" is
+leverage, not rejection, and it hands off to Isolation's price version
+("what can you swing today?"). The raise and the fall-back are 1 mechanism.
+
+The price anchor (advanced lever): quote 1.5x. If they push back, offer the
+real price if they commit today, on this call. The higher quote frames the
 real price as the deal.
 
 ## Receipts (the proof stack, exact captions)
