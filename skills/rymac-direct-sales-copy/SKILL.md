@@ -35,7 +35,7 @@ Full beat map with lengths and jobs: `references/letter-anatomy.md`.
 The letter is signed by a real person, and their tokens live in `${CLAUDE_SKILL_DIR}/my-voice-profile.md`. Resolve the signer before anything else:
 
 1. **If `my-voice-profile.md` exists** → the signer is set. Load it and skip to the workflow.
-2. **If it doesn't exist and the session is in Ryan's OathDriven workspace** → the signer is Ryan; his tokens are in `references/voice-dna.md` §1–4 and the brand voice docs. No profile file needed.
+2. **If it doesn't exist and the session is in the author's own workspace** → the signer is Ryan; his tokens are in `references/voice-dna.md` §1–4 and the brand voice docs. No profile file needed.
 3. **Otherwise (a new user, or the user says "set up my voice profile" / "set this up")** → run the 7-question intake from `references/voice-dna.md` §5 as a short interview (one question at a time, with Ryan's answer shown as the example for each). Then WRITE the answers to `${CLAUDE_SKILL_DIR}/my-voice-profile.md` under the same 7 headings, tell the user where it lives and that they can edit it anytime, and use it for every letter from then on. Never re-interview a user who already has a profile; if an answer is missing, ask only for that one.
 
 ## Workflow
@@ -43,14 +43,14 @@ The letter is signed by a real person, and their tokens live in `${CLAUDE_SKILL_
 Copy this checklist and tick it off:
 
 - [ ] 1. **Read `references/letter-anatomy.md` and `references/voice-dna.md`.** Never draft from memory of the framework.
-- [ ] 2. **Establish the signer** per First-run setup above (load `my-voice-profile.md`, or Ryan's tokens in the OathDriven workspace, or run the intake and save it). Never invent origin stories, client names, or dollar figures — ask.
+- [ ] 2. **Establish the signer** per First-run setup above (load `my-voice-profile.md`, or Ryan's tokens if you are in the author's own workspace, or run the intake and save it). Never invent origin stories, client names, or dollar figures — ask.
 - [ ] 3. **Mine the pain in the reader's own words.** Sources in priority order: real replies/call language, proven hooks that already converted, reviews and forums, then the niche-research skill if nothing exists. The pain bullets and agitation scenes must use vocabulary the reader actually says (their words go in scare quotes).
 - [ ] 4. **Collect the raw materials** before writing a word: the enemy (a specific middleman, never the reader), 4–6 pain questions, one full bad-day sequence for the agitation scenes, the origin story (name, trade, risk, timeframe, dollar result, spoken quote), the credibility marker, the mechanism NAME, the dream outcome + honest timeframe, the price anchor, the risk killers.
 - [ ] 5. **Nail the promise line.** Use the `rymac-headline-copywriting` skill's formula: `[Dream outcome] in [timeframe] without [the pain]`. This drives the letter's headline (beat 1) and the speed promise (beat 18). If that skill isn't installed, the formula plus the Hormozi value lens in `references/pas-framework.md` §7 is enough.
 - [ ] 6. **Draft all 23 beats in order.** One-sentence paragraphs dominate; 3-sentence hard cap. Bullets appear exactly twice (pains in, outcomes out).
 - [ ] 7. **Mark the emphasis pass.** Bold = claims/pains/promises. Underline = dream outcomes/identity lines (~6 per letter). Italics = quoted speech and identity wounds. Budget: ~2–5% of words, at most one emphasized phrase per paragraph.
 - [ ] 8. **Run the quality gates** (below). Fix and re-run until all pass.
-- [ ] 9. **Deliver** in the output format below. In the OathDriven workspace, save to `writing-room/drafts/[brand]-letter-draft.md`; otherwise save beside the project or where the user asks.
+- [ ] 9. **Deliver** in the output format below. Save to `writing-room/drafts/[brand]-letter-draft.md` if that folder exists, otherwise beside the project or where the user asks.
 
 ## Quality gates (all must pass before delivery)
 

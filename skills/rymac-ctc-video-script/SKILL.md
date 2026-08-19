@@ -93,7 +93,7 @@ run-ons.
 
 ## Rendering (the Remotion pipeline)
 
-Scripts render via `OathDriven/production/ctc-videos/` (see its README).
+Scripts render through the author's Remotion project (see its README).
 Rules that live in the renderer but shape the writing:
 
 - **Color grammar (kit tokens, applied per phrase, never single words):**
@@ -122,7 +122,7 @@ Rules that live in the renderer but shape the writing:
 ## Output
 
 Write the script to
-`OathDriven/writing-room/drafts/ctc-course/ctc-video-[NN]-[slug]-draft.md`
+`writing-room/drafts/[course]/video-[NN]-[slug]-draft.md`
 (create the folder if missing). Statuses follow workspace convention:
 draft → review → final.
 

@@ -1,6 +1,6 @@
 ---
 name: rymac-vsl-copywriting
-description: Write video sales letter (VSL) scripts in the house slide-per-sentence format — one sentence per slide, on-screen text verbatim with the VO, under 6 seconds a slide, scripted holds on the lines that matter — plus "invisible VSL" organic variants for YouTube. Use when the user asks to "write a VSL", "VSL script", "video sales letter", "fold video", "homepage video script", "invisible VSL", "YouTube VSL", "slide video", or wants a script, sales letter, or transcript converted into slides. Make sure to use this skill whenever a VSL or slide-based sales video is being written, rewritten, compressed, or storyboarded for any OathDriven brand.
+description: Write video sales letter (VSL) scripts in the house slide-per-sentence format — one sentence per slide, on-screen text verbatim with the VO, under 6 seconds a slide, scripted holds on the lines that matter — plus "invisible VSL" organic variants for YouTube. Use when the user asks to "write a VSL", "VSL script", "video sales letter", "fold video", "homepage video script", "invisible VSL", "YouTube VSL", "slide video", or wants a script, sales letter, or transcript converted into slides. Make sure to use this skill whenever a VSL or slide-based sales video is being written, rewritten, compressed, or storyboarded for any brand.
 argument-hint: [brand + video, e.g. "allodra charter VSL, 4 min"]
 ---
 
@@ -21,7 +21,7 @@ Read these supporting files on demand:
 | Sierra-6 | `writing-room/docs/voice-sierra6.md` *(if built — else the de facto sources in house-models.md)* | Never sell leads; veteran-operator tone; the 3 Laws |
 | RyMac | No voice doc yet — teaching voice, "Marine, two dogs, and a laptop" persona | Teach what/why, never sell hard |
 
-Paths are relative to the OathDriven workspace root — Glob for `**/voice-*.md` if the session starts in a subfolder. Guardrails move as the business does (e.g. the own-cloud claim) — **the voice doc at write time is the source of truth.** Never write a VSL before reading it.
+Paths are relative to the workspace root — Glob for `**/voice-*.md` if the session starts in a subfolder. Guardrails move as the business does (e.g. the own-cloud claim) — **the voice doc at write time is the source of truth.** Never write a VSL before reading it.
 
 ## The format (non-negotiable)
 

@@ -86,7 +86,7 @@ Mine reviews, support tickets, sales calls, reply emails for the exact sentence 
 
 Canonical case: rehab center control "Your addiction ends here" vs mined "If you think you need rehab, you do" → **+400% CTA clicks, +20% form submissions**. "You don't write the headline; you find it."
 
-For OathDriven: the mined sources are cold-email replies, discovery-call language, and the hooks that already earned replies (growth tax, renting-vs-owning, the 3-year number).
+Worked example: the mined sources are cold-email replies, discovery-call language, and the hooks that already earned replies (growth tax, renting-vs-owning, the 3-year number).
 
 ## 8. Harry Dry
 

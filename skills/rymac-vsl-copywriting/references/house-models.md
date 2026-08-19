@@ -11,7 +11,7 @@ The two in-house VSLs, decomposed as swipe material, plus the all-brand claims g
 
 ## 1. Sierra-6 fold video — the pacing model
 
-Live as `homepagevideo.mp4` on sierra6ai.com. Source: `sierra6-funnel-source/gen-slides.js` (17-slide) and `build_slides.py` (19-slide, adds two price-anchor slides). ~320 spoken words → ~2:15–2:30 → ≈5–7s/slide.
+Live as `homepagevideo.mp4` on sierra6ai.com. Source: 2 slide generators, a 17-slide build and a 19-slide build that adds 2 price-anchor slides. ~320 spoken words → ~2:15–2:30 → ≈5–7s/slide.
 
 **Format spec (what the build actually used):** 16:9 white background, all text centered. Arial Bold. Base #111111; red #C8102E highlight on 1–3 emotional/numeric runs per slide; green #16A34A reserved for the final signoff slide only. Font size inversely scales with word count: 42pt on the 5-word CTA slide down to 26–27pt on ~28-word slides. Production notes ride as gray italic footer text on the slide.
 
@@ -60,7 +60,7 @@ Use this pattern any time a long VSL/webinar/transcript becomes a fold video: tr
 
 ## 4. Sierra-6 / RyMac de facto voice
 
-Until `voice-sierra6.md` / `voice-rymac.md` exist, these are the sources of truth: the fold-video slide script, `sierra6-funnel-source/OathDriven-Video-VSL-Transcript.txt`, `sierra6-funnel-source/OathDriven-Copy-Bank.md`, and the cold-email-outreach skill positioning.
+Until `voice-sierra6.md` / `voice-rymac.md` exist, these are the sources of truth: the fold-video slide script, the funnel VSL transcript, the brand copy bank, and the cold-email-outreach skill positioning.
 
 - **Sierra-6 ICP:** veteran-owned home-service/construction, owner-operator, ≤10 employees, commercial and residential both. Excluded: franchises, chains, >10 employees, non-veteran.
 - **Problem sold:** speed-to-lead + follow-up ("it's not your prices, it's not your work"). Promise vocabulary: booked estimates, filled calendar, stop getting ghosted, double lead-to-estimate.
