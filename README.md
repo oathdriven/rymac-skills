@@ -145,8 +145,7 @@ appreciated but not required.
 ## Connect
 
 Built by **RyMac**. If these help you close deals or ship faster, I'd love to here
-about it: my free Skool community is
-**[here](https://www.skool.com/buildmarketclose/about)**.
+about it: **[my free Skool community is here](https://www.skool.com/buildmarketclose/about)**
 
 - ▶️ I do live builds and explanations on my **[YouTube](https://youtube.com/@rymachq?sub_confirmation=1)**
 - 📁 Get your free ICM Folder System: **[FilesnFolders.com](https://filesnfolders.com)**
