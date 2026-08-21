@@ -21,20 +21,20 @@ Claude Code loads skills from a `skills/` folder in one of two places:
 | **Project** | `<your-project>/.claude/skills/` | You want the skill in **one** repo only. |
 
 Inside that `skills/` folder, each skill is its own subfolder containing a
-`SKILL.md`. That's the whole contract.
+`SKILL.md`. That's the entire contract.
 
 ## Install one skill
 
-1. Copy the skill folder — e.g. `rymac-headline-copywriting` — into your skills
+1. Copy the skill folder, for example `rymac-headline-copywriting`, into your skills
    directory. The **folder name must stay exactly as-is** (Claude uses it as the
    skill's name).
    - Global: `~/.claude/skills/rymac-headline-copywriting/`
    - Project: `<your-project>/.claude/skills/rymac-headline-copywriting/`
 2. Start a new Claude Code session (skills load at startup).
-3. Verify: run `/help` or check your skills list — the skill should appear. Or
+3. Verify: run `/help` or check your skills list. The skill should appear. Or
    just ask for what it does and watch it fire.
 
-## Install the whole pack
+## Install the entire pack
 
 **macOS / Linux:**
 ```bash
