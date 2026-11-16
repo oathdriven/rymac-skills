@@ -69,26 +69,34 @@ own README with triggers and an example.
 
 ### Option A: grab 1 skill
 
-1. Download or copy the single skill folder you want (e.g. `skills/rymac-direct-sales-copy`).
-2. Drop it into your Claude Code skills directory:
+1. Download the zip: https://filesnfolders.com/downloads/rymac-skills-complete-0c8d5a53.zip
+2. Unzip the zip. The 14 skill folders sit at the top. Copy the single skill folder you want (e.g. `rymac-direct-sales-copy`).
+3. Drop it into your Claude Code skills directory:
    - **Global** (every project), recommended: `~/.claude/skills/`
      _(Windows: `C:\Users\<you>\.claude\skills\`)_
    - **One project only:** `<your-project>/.claude/skills/`
-3. Restart Claude Code. Ask for what the skill does and it loads automatically.
+4. Restart Claude Code. Ask for what the skill does and it loads automatically.
 
 ### Option B: grab the entire pack
 
-Clone the repo and copy every skill into your global skills directory:
+Download the zip and copy every skill folder into your global skills directory:
 
 ```bash
-git clone https://github.com/oathdriven/rymac-skills.git
-cp -r rymac-skills/skills/* ~/.claude/skills/
+mkdir -p ~/.claude/skills ~/rymac-skills-download
+curl -L -o ~/rymac-skills-download/pack.zip https://filesnfolders.com/downloads/rymac-skills-complete-0c8d5a53.zip
+unzip -q -o ~/rymac-skills-download/pack.zip -d ~/rymac-skills-download
+cp -r ~/rymac-skills-download/rymac-* ~/.claude/skills/
+rm -rf ~/rymac-skills-download
 ```
 
 **Windows (PowerShell):**
 ```powershell
-git clone https://github.com/oathdriven/rymac-skills.git
-Copy-Item rymac-skills\skills\* "$env:USERPROFILE\.claude\skills\" -Recurse
+$d = "$env:TEMP\rymac-skills-download"
+New-Item -ItemType Directory -Force $d, "$env:USERPROFILE\.claude\skills" | Out-Null
+Invoke-WebRequest "https://filesnfolders.com/downloads/rymac-skills-complete-0c8d5a53.zip" -OutFile "$d\pack.zip"
+Expand-Archive "$d\pack.zip" -DestinationPath $d -Force
+Copy-Item "$d\rymac-*" "$env:USERPROFILE\.claude\skills\" -Recurse -Force
+Remove-Item $d -Recurse -Force
 ```
 
 Restart Claude Code and check your skills list. All 14 should be there.

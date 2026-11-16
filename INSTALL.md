@@ -36,25 +36,35 @@ Inside that `skills/` folder, each skill is its own subfolder containing a
 
 ## Install the entire pack
 
+All 14 skills come in 1 zip. Inside the zip, the 14 skill folders sit at the top,
+next to 3 loose files (INSTALL.md, LICENSE, README.md).
+
+The zip: https://filesnfolders.com/downloads/rymac-skills-complete-0c8d5a53.zip
+
 **macOS / Linux:**
 ```bash
-git clone https://github.com/oathdriven/rymac-skills.git
-mkdir -p ~/.claude/skills
-cp -r rymac-skills/skills/* ~/.claude/skills/
+mkdir -p ~/.claude/skills ~/rymac-skills-download
+curl -L -o ~/rymac-skills-download/pack.zip https://filesnfolders.com/downloads/rymac-skills-complete-0c8d5a53.zip
+unzip -q -o ~/rymac-skills-download/pack.zip -d ~/rymac-skills-download
+cp -r ~/rymac-skills-download/rymac-* ~/.claude/skills/
+rm -rf ~/rymac-skills-download
 ```
 
 **Windows (PowerShell):**
 ```powershell
-git clone https://github.com/oathdriven/rymac-skills.git
-New-Item -ItemType Directory -Force "$env:USERPROFILE\.claude\skills" | Out-Null
-Copy-Item rymac-skills\skills\* "$env:USERPROFILE\.claude\skills\" -Recurse
+$d = "$env:TEMP\rymac-skills-download"
+New-Item -ItemType Directory -Force $d, "$env:USERPROFILE\.claude\skills" | Out-Null
+Invoke-WebRequest "https://filesnfolders.com/downloads/rymac-skills-complete-0c8d5a53.zip" -OutFile "$d\pack.zip"
+Expand-Archive "$d\pack.zip" -DestinationPath $d -Force
+Copy-Item "$d\rymac-*" "$env:USERPROFILE\.claude\skills\" -Recurse -Force
+Remove-Item $d -Recurse -Force
 ```
 
 Restart Claude Code. All fourteen skills should be listed.
 
 ## Updating
 
-Skills don't auto-update. To pull new versions, `git pull` the repo and copy the
+Skills don't auto-update. To get new versions, download the zip again and copy the
 folders over again (overwrite). Your own edits to a skill will be overwritten, so
 if you customize one, keep a copy.
 
